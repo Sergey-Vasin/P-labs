@@ -4,20 +4,25 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import java.time.Duration;
+
 public class BasaTest {
-    WebDriver browser;
+    WebDriver driver;
 
     @BeforeMethod
     public void setup() {
         ChromeOptions options = new ChromeOptions();
+        // options.addArguments("--window-size=1920,1080");
         options.addArguments("start-maximized"); // максимальные размер окна
         //   options.addArguments("headless"); // без открытие браузерв
 
-        browser = new ChromeDriver(options);
-        browser.get("https://www.saucedemo.com/");
+        driver = new ChromeDriver(options);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+        driver.get("https://www.saucedemo.com/");
     }
     @AfterMethod
     public void closeBrowser() {
-        browser.quit();
+
+        // browser.quit();
     }
 }
