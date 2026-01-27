@@ -12,8 +12,8 @@ import java.time.Duration;
 
 public class BasaTest {
     public WebDriver driver;
-     LoginPage loginPage;
-     ProductsPage productsPage;
+    LoginPage loginPage;
+    ProductsPage productsPage;
 
     @BeforeMethod
     public void setup() {
@@ -27,12 +27,10 @@ public class BasaTest {
 
         loginPage = new LoginPage(driver);
         productsPage = new ProductsPage(driver);
-
-
     }
+
     @AfterMethod
     public void closeBrowser() {
-
         // browser.quit();
     }
 }

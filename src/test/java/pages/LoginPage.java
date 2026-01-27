@@ -8,8 +8,6 @@ public class LoginPage extends BasePage {
     private final By passwordInput = By.xpath("//*[@data-test='password']");
     private final By loginButton = By.cssSelector("[name='login-button']");
     private static final By errorMsg = By.cssSelector("[data-test='error']");
-
-
     public LoginPage(WebDriver driver) {
         super(driver);
     }
@@ -31,26 +29,4 @@ public class LoginPage extends BasePage {
     public  String getErrorText() {
         return driver.findElement(errorMsg).getText();
     }
-
-    public By getPasswordInput() {
-        return passwordInput;
-    }
-
-    public By getLoginButton() {
-        return loginButton;
-    }
-
-    public By getLoginInput() {
-        return loginInput;
-    }
 }
-
-
-
-
-
-
-
-
-
-

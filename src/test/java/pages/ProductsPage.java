@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 public class ProductsPage extends BasePage {
     private final By title = By.cssSelector("[data-test='title']");
 
-
     public ProductsPage(WebDriver driver) {
         super(driver);
     }
@@ -18,6 +17,4 @@ public class ProductsPage extends BasePage {
     public String getTitle() {
         return driver.findElement(title).getText();
     }
-
-
 }
