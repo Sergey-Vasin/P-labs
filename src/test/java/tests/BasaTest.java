@@ -31,6 +31,6 @@ public class BasaTest {
 
     @AfterMethod
     public void closeBrowser() {
-        // browser.quit();
+        driver.quit();
     }
 }
