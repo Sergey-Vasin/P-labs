@@ -16,7 +16,7 @@ public class LoginTest extends BasaTest {
         loginPage.login("standard_user", "secret_sauce");
 
         assertTrue(productsPage.isTitleisdisplayed(), "Заголовок не виден");
-        // assertEquals(productsPage.getTitle(), "Products", "не верный заголовок");
+        assertEquals(productsPage.getTitle(), "Products", "не верный заголовок");
     }
 
     @DataProvider() //* параметризация
