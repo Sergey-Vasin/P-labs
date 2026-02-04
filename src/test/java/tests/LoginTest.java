@@ -1,14 +1,12 @@
 package tests;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pages.LoginPage;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class LoginTest extends BasaTest {
+public class LoginTest extends BaseTest {
 
     @Test(invocationCount = 1, priority = 1, enabled = true, alwaysRun = true)
     public void correctLogin() {
