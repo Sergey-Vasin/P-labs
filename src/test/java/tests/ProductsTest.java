@@ -12,6 +12,7 @@ public class ProductsTest extends BaseTest {
     List<String> goodsList = new ArrayList<>(
             List.of("Sauce Labs Bike Light", "Sauce Labs Fleece Jacket", "Sauce Labs Bolt T-Shirt")
     );
+
     @Test
     public void checkGoodsAdded() {
         System.out.println("ProductsTest.corrent !!!!! in thread: " + Thread.currentThread().getId());

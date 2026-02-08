@@ -12,7 +12,6 @@ public abstract class BasaPage {
     public static final String BASE_URL = PropertyReader.getProperty("saucedemo.url");
     private final By title = By.cssSelector(DATA_TEST_PATTERN.formatted("title"));
 
-
     WebDriver driver;
     WebDriverWait wait;
 

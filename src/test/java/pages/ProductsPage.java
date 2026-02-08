@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
 import java.time.Duration;
 
 public class ProductsPage extends BasaPage {
@@ -14,7 +15,6 @@ public class ProductsPage extends BasaPage {
     private final By cartCounter = By.cssSelector(DATA_TEST_PATTERN.formatted("shopping-cart-badge"));
     private final By cartLink = By.cssSelector(DATA_TEST_PATTERN.formatted("shopping-cart-link"));
 
-
     public ProductsPage(WebDriver driver) {
         super(driver);
     }
@@ -22,6 +22,7 @@ public class ProductsPage extends BasaPage {
     public boolean isTitleisdisplayed() {
         return driver.findElement(title).isDisplayed();
     }
+
     public String getTitle() {
         return driver.findElement(title).getText();
     }
@@ -44,6 +45,7 @@ public class ProductsPage extends BasaPage {
         return driver.findElement(cartCounter).getCssValue("background-color");
     }
 
-    public void switchToCart() { driver.findElement(cartLink).click();
-}
+    public void switchToCart() {
+        driver.findElement(cartLink).click();
+    }
 }

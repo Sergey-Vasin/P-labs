@@ -33,7 +33,7 @@ public class BaseTest {
             options.addArguments("start-maximized"); // максимальные размер окна
             options.addArguments("--guest");
             // options.addArguments("--window-size=1920,1080");
-            // options.addArguments("headless"); // без открытие браузерв
+            options.addArguments("headless"); // без открытие браузерв
             driver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("edge")) {
             WebDriverManager.chromedriver().setup();
