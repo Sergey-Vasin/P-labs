@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CartPage extends BasePage {
+public class CartPage extends BasaPage {
     By product = By.cssSelector(".inventory_item_name");
 
     public CartPage(WebDriver driver) {
