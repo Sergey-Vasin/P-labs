@@ -5,12 +5,13 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static User.UserFactory.withAdminPermission;
+import static user.UserFactory.withAdminPermission;
 import static org.testng.AssertJUnit.*;
 
 public class ProductsTest extends BaseTest {
     List<String> goodsList = new ArrayList<>(
-            List.of("Sauce Labs Bike Light", "Sauce Labs Fleece Jacket", "Sauce Labs Bolt T-Shirt")
+            List.of("Sauce Labs Bike Light",
+                    "Sauce Labs Fleece Jacket", "Sauce Labs Bolt T-Shirt")
     );
 
     @Test
@@ -26,11 +27,11 @@ public class ProductsTest extends BaseTest {
             productsPage.addGoodsToCart(goods);
         }
 
-        for (int i = 0; i < goodsList.size(); i++) {
+       /* for (int i = 0; i < goodsList.size(); i++) {
             productsPage.addGoodsToCart(goodsList.get(i));
-        }
+        }*/
 
-        productsPage.addGoodsToCart(5);
+        productsPage.addGoodsToCart(2);
         assertEquals(productsPage.checkCounterValue(), "4");
         assertEquals(productsPage.checkCounterColor(), "rgba(226, 35, 26, 1)");
     }

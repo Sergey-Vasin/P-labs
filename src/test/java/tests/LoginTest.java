@@ -1,12 +1,12 @@
 package tests;
 
-import User.User;
-import User.UserFactory;
+import user.User;
+import user.UserFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static User.UserFactory.withAdminPermission;
-import static User.UserFactory.withLockedPermission;
+import static user.UserFactory.withAdminPermission;
+import static user.UserFactory.withLockedPermission;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
