@@ -2,7 +2,7 @@ package tests;
 
 import org.testng.annotations.Test;
 
-import static User.UserFactory.withAdminPermission;
+import static user.UserFactory.withAdminPermission;
 import static org.testng.AssertJUnit.*;
 
 public class CartTest extends BaseTest {
