@@ -2,6 +2,8 @@ package tests;
 
 import User.User;
 import User.UserFactory;
+import Utils.AllureUtils;
+import io.qameta.allure.*;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -33,6 +35,13 @@ public class LoginTest extends BaseTest {
         };
     }
 
+    @Epic("Тестирование интрнет площадки ")
+    @Feature("проверка расчета скидки")
+    @Story("Скидка")
+    @Severity(SeverityLevel.BLOCKER)
+    @Owner("Sergey V - контакты")
+    @TmsLink("P-labs")
+    @Issue("Tutorial4")
     @Test(dataProvider = "loginData", description = "тест проверяет заблокированного пользователя", invocationCount = 1)
     public void incorrentLogin(User user, String errorMsg) {
         System.out.println("LoginTest.incorrentLogin !!!!! in thread: " + Thread.currentThread().getId());

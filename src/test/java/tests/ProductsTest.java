@@ -26,9 +26,9 @@ public class ProductsTest extends BaseTest {
             productsPage.addGoodsToCart(goods);
         }
 
-        for (int i = 0; i < goodsList.size(); i++) {
+        /* for (int i = 0; i < goodsList.size(); i++) {
             productsPage.addGoodsToCart(goodsList.get(i));
-        }
+        } */
 
         productsPage.addGoodsToCart(5);
         assertEquals(productsPage.checkCounterValue(), "4");
