@@ -27,9 +27,15 @@ public class ProductsTest extends BaseTest {
             productsPage.addGoodsToCart(goods);
         }
 
+<<<<<<< flat-4
+        /* for (int i = 0; i < goodsList.size(); i++) {
+            productsPage.addGoodsToCart(goodsList.get(i));
+        } */
+=======
        /* for (int i = 0; i < goodsList.size(); i++) {
             productsPage.addGoodsToCart(goodsList.get(i));
         }*/
+>>>>>>> master
 
         productsPage.addGoodsToCart(2);
         assertEquals(productsPage.checkCounterValue(), "4");
