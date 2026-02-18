@@ -1,7 +1,11 @@
 package pages;
 
+<<<<<<< flat-4
 import User.User;
 import io.qameta.allure.Step;
+=======
+import user.User;
+>>>>>>> master
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

@@ -1,6 +1,6 @@
-package User;
+package user;
 
-import Utils.PropertyReader;
+import utils.PropertyReader;
 
 public class UserFactory {
     public static User withAdminPermission() {

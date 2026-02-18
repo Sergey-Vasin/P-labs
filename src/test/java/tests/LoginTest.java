@@ -1,14 +1,19 @@
 package tests;
 
+<<<<<<< flat-4
 import User.User;
 import User.UserFactory;
 import Utils.AllureUtils;
 import io.qameta.allure.*;
+=======
+import user.User;
+import user.UserFactory;
+>>>>>>> master
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static User.UserFactory.withAdminPermission;
-import static User.UserFactory.withLockedPermission;
+import static user.UserFactory.withAdminPermission;
+import static user.UserFactory.withLockedPermission;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 

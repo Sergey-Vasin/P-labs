@@ -1,7 +1,11 @@
 package tests;
 
+<<<<<<< flat-4
 import Utils.PropertyReader;
 import Utils.TestListener;
+=======
+import utils.PropertyReader;
+>>>>>>> master
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.testng.AllureTestNg;
 import org.openqa.selenium.WebDriver;
